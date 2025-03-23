@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@react-native-community/datetimepicker": "8.2.0",
+    "expo": "~52.0.40",
+    "expo-constants": "~15.4.5",
+    "expo-linking": "~6.2.2",
+    "expo-router": "^3.4.8",
+    "expo-speech": "^13.0.1",
+    "expo-status-bar": "~1.11.1",
+    "expo-web-browser": "^14.0.2",
+    "react": "18.3.1",
+    "react-native": "0.76.7",
+    "react-native-gesture-handler": "~2.20.2",
+    "react-native-paper": "^5.13.1",
+    "react-native-reanimated": "~3.6.2",
+    "react-native-safe-area-context": "^5.3.0",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "~18.3.12",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "typescript": "^5.3.3"
+  },
+  "name": "UniversityTaskManagerApp",
+  "version": "1.0.0",
+  "scripts": {
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  }
+}

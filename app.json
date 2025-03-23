@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "scheme": "universitytaskmanagerapp",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "@react-native-community/datetimepicker",
+        {
+          "mode": "native"
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.zaidhabib.universitytaskmanagerapp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.zaidhabib.universitytaskmanagerapp"
+    },
+    "newArchEnabled": true,
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  }
+}
