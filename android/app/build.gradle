@@ -86,9 +86,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.zaidhabib.universitytaskmanagerapp'
+    namespace 'com.universitytaskmanagerapp'
     defaultConfig {
-        applicationId 'com.zaidhabib.universitytaskmanagerapp'
+        applicationId 'com.universitytaskmanagerapp'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

@@ -11,7 +11,7 @@
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
-    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+    <string>com.universitytaskmanagerapp</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
@@ -28,7 +28,7 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>universitytaskmanagerapp</string>
-          <string>com.zaidhabib.universitytaskmanagerapp</string>
+          <string>com.universitytaskmanagerapp</string>
         </array>
       </dict>
     </array>
@@ -47,7 +47,7 @@
     </dict>
     <key>NSUserActivityTypes</key>
     <array>
-      <string>$(PRODUCT_BUNDLE_IDENTIFIER).expo.index_route</string>
+      <string>com.universitytaskmanagerapp.expo.index_route</string>
     </array>
     <key>UILaunchStoryboardName</key>
     <string>SplashScreen</string>

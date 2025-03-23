@@ -1,4 +1,4 @@
-package com.zaidhabib.universitytaskmanagerapp
+package com.universitytaskmanagerapp
 
 import android.app.Application
 import android.content.res.Configuration

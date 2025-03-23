@@ -1,41 +1,45 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import { Text, Button } from 'react-native-paper';
-import { router } from 'expo-router';
-import { useTaskStore } from '@/store/taskStore';
 
 export default function HomeScreen() {
-  const { tasks } = useTaskStore();
-  const completedTasks = tasks.filter(task => task.completed).length;
-  const pendingTasks = tasks.length - completedTasks;
-
   return (
     <View style={styles.container}>
-      <Text variant="headlineMedium" style={styles.title}>
-        University Task Manager
-      </Text>
-      <Text variant="bodyLarge" style={styles.subtitle}>
-        Manage your academic tasks efficiently
-      </Text>
-      
-      <View style={styles.statsContainer}>
-        <View style={styles.statCard}>
-          <Text variant="titleLarge">{pendingTasks}</Text>
-          <Text variant="bodyMedium">Pending</Text>
-        </View>
-        <View style={styles.statCard}>
-          <Text variant="titleLarge">{completedTasks}</Text>
-          <Text variant="bodyMedium">Completed</Text>
+      <View style={styles.content}>
+        <Text variant="displaySmall" style={styles.title}>
+          Welcome to
+        </Text>
+        <Text variant="displayMedium" style={styles.appName}>
+          University Task Manager
+        </Text>
+        
+        <Text variant="bodyLarge" style={styles.description}>
+          Your personal assistant for managing academic tasks, assignments, and goals.
+          Stay organized and never miss a deadline!
+        </Text>
+
+        <View style={styles.buttonContainer}>
+          <Button
+            mode="contained"
+            style={styles.button}
+            onPress={() => {}}
+          >
+            Get Started
+          </Button>
+          
+          <Button
+            mode="outlined"
+            style={styles.button}
+            onPress={() => {}}
+          >
+            Learn More
+          </Button>
         </View>
       </View>
 
-      <Button
-        mode="contained"
-        onPress={() => router.push('/tasks')}
-        style={styles.button}
-      >
-        View Tasks
-      </Button>
+      <Text variant="bodySmall" style={styles.version}>
+        Version 1.0.0
+      </Text>
     </View>
   );
 }
@@ -43,33 +47,40 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 16,
-    alignItems: 'center',
+    backgroundColor: '#fff',
+  },
+  content: {
+    flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
+    padding: 24,
   },
   title: {
-    textAlign: 'center',
+    color: '#666',
     marginBottom: 8,
   },
-  subtitle: {
-    textAlign: 'center',
+  appName: {
+    color: '#000',
     marginBottom: 24,
-    opacity: 0.7,
+    textAlign: 'center',
   },
-  statsContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginVertical: 24,
+  description: {
+    textAlign: 'center',
+    color: '#666',
+    marginBottom: 32,
+    maxWidth: 600,
+  },
+  buttonContainer: {
+    gap: 12,
     width: '100%',
-  },
-  statCard: {
-    padding: 16,
-    borderRadius: 8,
-    backgroundColor: '#f5f5f5',
-    alignItems: 'center',
-    minWidth: 120,
+    maxWidth: 300,
   },
   button: {
-    marginTop: 16,
+    width: '100%',
+  },
+  version: {
+    textAlign: 'center',
+    color: '#999',
+    paddingBottom: 24,
   },
 }); 

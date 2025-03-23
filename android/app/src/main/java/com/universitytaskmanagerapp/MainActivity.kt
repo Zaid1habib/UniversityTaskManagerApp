@@ -1,4 +1,4 @@
-package com.zaidhabib.universitytaskmanagerapp
+package com.universitytaskmanagerapp
 
 import android.os.Build
 import android.os.Bundle

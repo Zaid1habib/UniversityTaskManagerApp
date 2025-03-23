@@ -14,10 +14,10 @@
       ]
     ],
     "android": {
-      "package": "com.zaidhabib.universitytaskmanagerapp"
+      "package": "com.universitytaskmanagerapp"
     },
     "ios": {
-      "bundleIdentifier": "com.zaidhabib.universitytaskmanagerapp"
+      "bundleIdentifier": "com.universitytaskmanagerapp"
     },
     "newArchEnabled": true,
     "experiments": {
