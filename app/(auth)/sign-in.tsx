@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, View, ImageBackground, KeyboardAvoidingView, Platform } from 'react-native';
 import { Text, TextInput, Button } from 'react-native-paper';
 import { Link, router } from 'expo-router';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+// import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const colors = {
   primary: '#007AFF',
@@ -24,18 +24,21 @@ export default function SignInScreen() {
       setLoading(true);
       setError('');
 
-      if (!email || !password) {
-        throw new Error('Please fill in all fields');
-      }
+      // Temporarily disabled authentication for development
+      // if (!email || !password) {
+      //   throw new Error('Please fill in all fields');
+      // }
 
-      const storedUser = await AsyncStorage.getItem('user');
-      const user = storedUser ? JSON.parse(storedUser) : null;
+      // const storedUser = await AsyncStorage.getItem('user');
+      // const user = storedUser ? JSON.parse(storedUser) : null;
 
-      if (!user || user.email !== email || user.password !== password) {
-        throw new Error('Invalid email or password');
-      }
+      // if (!user || user.email !== email || user.password !== password) {
+      //   throw new Error('Invalid email or password');
+      // }
 
-      await AsyncStorage.setItem('userToken', 'dummy-auth-token');
+      // await AsyncStorage.setItem('userToken', 'dummy-auth-token');
+
+      // Navigate directly to home for development
       router.replace('/');
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : 'An error occurred');
